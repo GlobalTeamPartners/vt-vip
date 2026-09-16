@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Visualize Transfers - النقل الفاخر في روسيا</title>
+  <link rel="icon" type="image/jpeg" href="images/logo.png">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&family=Cairo:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    body { font-family: 'Cairo', sans-serif; }
+    h1, h2, .logo-text { font-family: 'Cormorant Garamond', serif; }
+  </style>
+</head>
+<body>
+  <!-- Cinematic Background -->
+  <canvas id="gl-canvas"></canvas>
+  <div class="grain-overlay"></div>
+
+  <!-- Navigation -->
+  <nav class="navbar" id="navbar">
+    <a href="#" class="nav-logo">
+      <img src="images/logo.png" alt="VT Logo" class="logo-img">
+      <span class="logo-text">VT VIP</span>
+    </a>
+    <div class="lang-switcher">
+      <a href="index.html">RU</a>
+      <a href="en.html">EN</a>
+      <a href="ar.html" class="active">AR</a>
+    </div>
+  </nav>
+
+  <div id="ui-layer">
+    <div class="stage">
+      <section class="page is-active" data-index="0" id="hero">
+        <div class="content">
+          <img src="images/logo.png" alt="VT Logo" class="hero-logo reveal-3d">
+          <h1 class="reveal-3d gradient-text">النقل الفاخر في روسيا</h1>
+          <p class="hero-subtitle reveal-3d">خدمة حصرية لضيوف الإمارات العربية المتحدة. موسكو، سانت بطرسبرغ، سوتشي.</p>
+          <div class="actions reveal-3d">
+            <a href="#contacts" class="btn btn-primary">احجز الآن</a>
+            <a href="#contacts" class="btn btn-outline">كن شريكاً</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="page" data-index="1">
+        <div class="content">
+          <div class="card reveal-3d">
+            <h2>سائقك الشخصي</h2>
+            <p>استقبال في المطار، مرافقة على مدار الساعة. أسطول السيارات: مرسيدس V-Class، S-Class، Maybach.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="page" data-index="2">
+        <div class="content">
+          <div class="card reveal-3d">
+            <h2 class="gradient-text">سانت بطرسبرغ</h2>
+            <p>المركز التاريخي والضواحي بأقصى درجات الراحة.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="page" data-index="3">
+        <div class="content">
+          <div class="card reveal-3d">
+            <h2>سوتشي وكراسنيا بوليانا</h2>
+            <p>رحلة بين الجبال والبحر مع مناظر بانورامية.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="page" data-index="4">
+        <div class="content">
+          <div class="card reveal-3d">
+            <h2 class="gradient-text">خدمة لا تشوبها شائبة</h2>
+            <p>خصوصية تامة، دعم حلال، إنترنت لاسلكي، ومشروبات فاخرة.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="page" data-index="5" id="contacts">
+        <div class="content">
+          <div class="card reveal-3d">
+            <h2>شراكة B2B</h2>
+            <p>شروط خاصة لوكالات السفر في الإمارات (عمولة الوكالة 10-15٪).</p>
+            <p class="contact-info">Email: info@vt-vip.ru<br>Phone: +7 495 000 00 00</p>
+            <a href="mailto:info@vt-vip.ru" class="btn btn-primary">اتصل بنا</a>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+
+  <div id="loader">
+    <img src="images/logo.png" alt="Loading" class="loader-logo">
+    <div id="progress-bar-wrap">
+      <div id="progress-bar"></div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
