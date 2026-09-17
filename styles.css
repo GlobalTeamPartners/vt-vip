@@ -259,3 +259,27 @@ body.standard-page #gl-canvas {
   font-size: 24px; font-family: 'Cormorant Garamond', serif;
   color: #fff; margin-bottom: 20px; font-weight: 600;
 }
+
+/* Floating Concierge */
+.floating-concierge {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background: #25D366;
+  color: #fff;
+  padding: 15px 25px;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  font-weight: 600;
+  box-shadow: 0 10px 30px rgba(37, 211, 102, 0.4);
+  z-index: 1000;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.floating-concierge:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 40px rgba(37, 211, 102, 0.6);
+}
+.floating-concierge svg { fill: #fff; }
