@@ -186,6 +186,20 @@ p { font-size: clamp(16px, 2vw, 20px); margin-bottom: 30px; text-shadow: var(--t
 
 
 @media (max-width: 768px) {
+
+  .destinations-grid {
+    padding: 0 20px 100px;
+    grid-template-columns: 1fr;
+  }
+  .tripwire-header { padding: 120px 20px 40px; }
+  .tripwire-header h1 { font-size: 32px !important; }
+  .tripwire-content { padding: 0 20px 60px; }
+  .cta-box { padding: 25px; margin-top: 40px; }
+  .cta-box h3 { font-size: 22px !important; }
+  .destination-card { padding: 20px; }
+  .price-tag { font-size: 20px; }
+  .nav-links { gap: 15px; font-size: 13px; flex-wrap: wrap; }
+
   .navbar { 
     flex-wrap: wrap; 
     height: auto; 
