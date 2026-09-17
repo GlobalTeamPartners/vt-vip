@@ -1,4 +1,4 @@
-:root {
+﻿:root {
   --gold: #d4a843;
   --gold2: #b88d30;
   --rose: #e4c28a;
@@ -186,8 +186,33 @@ p { font-size: clamp(16px, 2vw, 20px); margin-bottom: 30px; text-shadow: var(--t
   50% { opacity: 1; transform: scale(1.05); }
 }
 
+
 @media (max-width: 768px) {
-  .navbar { padding: 0 20px; }
+  .navbar { 
+    flex-wrap: wrap; 
+    height: auto; 
+    padding: 15px;
+    gap: 15px;
+  }
+  .nav-links { 
+    order: 3; 
+    width: 100%; 
+    justify-content: center; 
+    gap: 20px; 
+    font-size: 15px;
+    padding-bottom: 5px;
+  }
+  .lang-switcher {
+    order: 2;
+  }
+  .nav-logo {
+    order: 1;
+  }
+  .page { padding: 130px 20px 60px; text-align: center; }
+  .card { padding: 25px; }
+  .actions { flex-direction: column; }
+  .btn { width: 100%; }
+}
   .page { padding: 100px 20px 60px; text-align: center; }
   .card { padding: 25px; }
   .actions { flex-direction: column; }
@@ -283,3 +308,4 @@ body.standard-page #gl-canvas {
   box-shadow: 0 15px 40px rgba(37, 211, 102, 0.6);
 }
 .floating-concierge svg { fill: #fff; }
+
