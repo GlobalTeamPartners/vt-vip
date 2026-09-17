@@ -1,119 +1,74 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
+  <style> body { font-family: 'Cairo', sans-serif; } h1, h2, h3, .logo-text { font-family: 'Cormorant Garamond', serif; } h1 { direction: ltr; display: inline-block; } </style>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>الوجهات والأدلة - VT VIP</title>
+  <title>Направления и الأدلة - VT VIP</title>
   <link rel="icon" type="image/jpeg" href="images/logo.png">
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&family=Cairo:wght@300;400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&family=Manrope:wght@300;400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
-  <style>
-    body { font-family: 'Cairo', sans-serif; }
-    h1, h2, h3, .logo-text { font-family: 'Cormorant Garamond', serif; }
-    h1 { direction: ltr; display: inline-block; }
-    .destination-card ul li { padding-right: 20px; padding-left: 0; }
-    .destination-card ul li::before { right: 0; left: auto; }
-  </style>
 </head>
 <body class="standard-page">
   <div class="grain-overlay"></div>
-
   <nav class="navbar" id="navbar">
-    <a href="ar.html" class="nav-logo">
-      <img src="images/logo.png" alt="VT Logo" class="logo-img">
-      <span class="logo-text">VT VIP</span>
+    <a href="index.html" class="nav-logo">
+      <img src="images/logo.png" alt="VT Logo" class="logo-img"><span class="logo-text">VT VIP</span>
     </a>
-    
     <div class="nav-links">
-      <a href="ar.html">????????</a>
-      <a href="fleet-ar.html">???????</a>
-      <a href="destinations-ar.html">?????? ??????????</a>
+      <a href="index.html">الرئيسية</a>
+      <a href="fleet.html">أسطولنا</a>
+      <a href="destinations.html" style="color: var(--gold);">الأدلة</a>
     </div>
     <div class="lang-switcher">
-      <a href="destinations.html">RU</a>
+      <a href="destinations.html" >RU</a>
       <a href="destinations-en.html">EN</a>
-      <a href="destinations-ar.html" class="active">AR</a>
+      <a href="destinations-ar.html"class="active">AR</a>
     </div>
   </nav>
 
   <div class="destinations-hero reveal-3d" style="opacity: 1; transform: none;">
-    <h1 class="gradient-text">أدلة المدن والحصريات</h1>
-    <p>أضف دليلاً متميزًا إلى طلب النقل الخاص بك. لقد جمعنا أكثر المواقع سرية، وأفضل المطاعم، والأنشطة الفاخرة لضيوف الإمارات.</p>
+    <h1 class="gradient-text">الأدلة и Эксклюзив</h1>
+    <p>أضف دليلاً متميزًا إلى طلب النقل الخاص بك. لقد جمعنا أكثر المواقع سرية، وأفضل المطاعم، والأنشطة الفاخرة.</p>
   </div>
 
   <div class="destinations-grid">
-    <!-- Moscow -->
-    <div class="destination-card">
-      <h3>موسكو</h3>
-      <p>عاصمة الفخامة والإيقاع السريع. مثالية للأعمال والتسوق الراقي.</p>
-      <ul>
-        <li>غرف تسوق VIP خاصة في TSUM و GUM</li>
-        <li>مطاعم حلال بإطلالات بانورامية (مدينة موسكو)</li>
-        <li>مسارات آمنة ودعم طيران الأعمال</li>
-      </ul>
-      <div class="price-tag">دليل إضافي: $49</div>
-      <a href="mailto:info@vt-vip.ru?subject=Moscow Tripwire" class="btn btn-outline" style="text-align: center;">إضافة إلى النقل</a>
+    <div class="destination-card" style="cursor: pointer;" onclick="window.location.href='tripwire-moscow.html'">
+      <h3><a href="tripwire-moscow.html" style="color: var(--gold); text-decoration: none;">موسكو</a></h3>
+      <p>عاصمة الفخامة. مثالية للأعمال والتسوق الراقي.</p>
+      <ul><li>غرف تسوق VIP خاصة في TSUM و GUM</li><li>Рестораны с халяль-меню (موسكو-Сити)</li><li>مسارات آمنة</li></ul>
+      <div class="price-tag">تبدأ من $49</div>
+      <a href="tripwire-moscow.html" class="btn btn-outline" style="text-align: center;">اقرأ المزيد عن الدليل</a>
     </div>
-
-    <!-- Saint Petersburg -->
-    <div class="destination-card">
-      <h3>سانت بطرسبرغ</h3>
-      <p>الجمال الإمبراطوري والليالي البيضاء. العاصمة الشمالية لروسيا.</p>
-      <ul>
-        <li>جولات خاصة بدون طوابير في متحف الإرميتاج</li>
-        <li>تأجير يخوت فاخرة في قنوات نيفا</li>
-        <li>دخول إلى القصور المغلقة والمساكن الصيفية</li>
-      </ul>
-      <div class="price-tag">دليل إضافي: $49</div>
-      <a href="mailto:info@vt-vip.ru?subject=SPB Tripwire" class="btn btn-outline" style="text-align: center;">إضافة إلى النقل</a>
+    <div class="destination-card" style="cursor: pointer;" onclick="window.location.href='tripwire-spb.html'">
+      <h3><a href="tripwire-spb.html" style="color: var(--gold); text-decoration: none;">سانت بطرسبرغ</a></h3>
+      <p>الجمال الإمبراطوري والليالي البيضاء.</p>
+      <ul><li>جولات خاصة في متحف الإرميتاج</li><li>تأجير يخوت في قنوات نيفا</li><li>دخول القصور المغلقة</li></ul>
+      <div class="price-tag">تبدأ من $49</div>
+      <a href="tripwire-spb.html" class="btn btn-outline" style="text-align: center;">اقرأ المزيد عن الدليل</a>
     </div>
-
-    <!-- Sochi -->
-    <div class="destination-card">
-      <h3>سوتشي (كراسنايا بوليانا)</h3>
+    <div class="destination-card" style="cursor: pointer;" onclick="window.location.href='tripwire-sochi.html'">
+      <h3><a href="tripwire-sochi.html" style="color: var(--gold); text-decoration: none;">سوتشي (كراسنايا بوليانا)</a></h3>
       <p>الريفييرا الروسية. مزيج من نسيم البحر ومنتجعات التزلج.</p>
-      <ul>
-        <li>خيم شاطئية لكبار الشخصيات واستئجار يخوت</li>
-        <li>جولات بالطائرة المروحية فوق جبال القوقاز</li>
-        <li>كازينوهات فاخرة وشاليهات جبلية</li>
-      </ul>
-      <div class="price-tag">دليل إضافي: $59</div>
-      <a href="mailto:info@vt-vip.ru?subject=Sochi Tripwire" class="btn btn-outline" style="text-align: center;">إضافة إلى النقل</a>
+      <ul><li>خيم شاطئية لكبار الشخصيات ويخوت</li><li>جولات بالطائرة المروحية</li><li>كازينوهات فاخرة</li></ul>
+      <div class="price-tag">تبدأ من $59</div>
+      <a href="tripwire-sochi.html" class="btn btn-outline" style="text-align: center;">اقرأ المزيد عن الدليل</a>
     </div>
-
-    <!-- Kazan -->
-    <div class="destination-card">
-      <h3>قازان (كازان)</h3>
-      <p>تقاطع الثقافات. لؤلؤة تتارستان ذات التراث الغني.</p>
-      <ul>
-        <li>جولات حصرية في كرملين قازان</li>
-        <li>أفضل المطاعم الحلال الأصيلة</li>
-        <li>رحلات نهرية على نهر الفولغا بقوارب فاخرة</li>
-      </ul>
-      <div class="price-tag">دليل إضافي: $39</div>
-      <a href="mailto:info@vt-vip.ru?subject=Kazan Tripwire" class="btn btn-outline" style="text-align: center;">إضافة إلى النقل</a>
+    <div class="destination-card" style="cursor: pointer;" onclick="window.location.href='tripwire-kazan.html'">
+      <h3><a href="tripwire-kazan.html" style="color: var(--gold); text-decoration: none;">قازان</a></h3>
+      <p>تقاطع الثقافات. لؤلؤة تتارستان.</p>
+      <ul><li>جولات حصرية في الكرملين</li><li>أفضل المطاعم الحلال</li><li>رحلات نهرية على الفولغا</li></ul>
+      <div class="price-tag">تبدأ من $39</div>
+      <a href="tripwire-kazan.html" class="btn btn-outline" style="text-align: center;">اقرأ المزيد عن الدليل</a>
     </div>
-    
-    <!-- Murmansk -->
-    <div class="destination-card">
-      <h3>مورمانسك</h3>
-      <p>مطاردة الأضواء الشمالية على حافة العالم براحة مطلقة.</p>
-      <ul>
-        <li>تخييم فاخر (Glamping) بأسقف زجاجية</li>
-        <li>فن الطهي القطبي في أرقى المطاعم</li>
-        <li>رحلات استكشافية خاصة في سيارات الدفع الرباعي الفاخرة</li>
-      </ul>
-      <div class="price-tag">دليل إضافي: $79</div>
-      <a href="mailto:info@vt-vip.ru?subject=Murmansk Tripwire" class="btn btn-outline" style="text-align: center;">إضافة إلى النقل</a>
+    <div class="destination-card" style="cursor: pointer;" onclick="window.location.href='tripwire-murmansk.html'">
+      <h3><a href="tripwire-murmansk.html" style="color: var(--gold); text-decoration: none;">مورمانسك</a></h3>
+      <p>مطاردة الأضواء الشمالية على حافة العالم.</p>
+      <ul><li>تخييم فاخر</li><li>فن الطهي القطبي</li><li>رحلات استكشافية بسيارات الدفع الرباعي</li></ul>
+      <div class="price-tag">تبدأ من $79</div>
+      <a href="tripwire-murmansk.html" class="btn btn-outline" style="text-align: center;">اقرأ المزيد عن الدليل</a>
     </div>
   </div>
-
-  <!-- Floating Concierge -->
-  <a href="https://wa.me/74950000000" class="floating-concierge" target="_blank">
-    <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.888-.788-1.487-1.761-1.663-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.052 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-    <span>Personal Concierge</span>
-  </a>
-
+  <a href="https://wa.me/74950000000" class="floating-concierge" target="_blank"><svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.888-.788-1.487-1.761-1.663-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.052 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg><span>Personal Concierge</span></a>
 </body>
 </html>
-
