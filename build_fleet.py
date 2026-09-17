@@ -1,14 +1,13 @@
-﻿import os
+import os
 
 files = {}
 
-# ----------------- FLEET PAGES -----------------
 files['fleet.html'] = """<!DOCTYPE html>
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ÐÐ²Ñ‚Ð¾Ð¿Ð°Ñ€Ðº - VT VIP</title>
+  <title>Автопарк - VT VIP</title>
   <link rel="icon" type="image/jpeg" href="images/logo_clear.png">
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&family=Manrope:wght@300;400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
@@ -21,9 +20,9 @@ files['fleet.html'] = """<!DOCTYPE html>
       <span class="logo-text">VT VIP</span>
     </a>
     <div class="nav-links">
-      <a href="index.html">Ð“Ð»Ð°Ð²Ð½Ð°Ñ</a>
-      <a href="fleet.html" style="color: var(--gold);">ÐÐ²Ñ‚Ð¾Ð¿Ð°Ñ€Ðº</a>
-      <a href="destinations.html">ÐŸÑƒÑ‚ÐµÐ²Ð¾Ð´Ð¸Ñ‚ÐµÐ»Ð¸</a>
+      <a href="index.html">Главная</a>
+      <a href="fleet.html" style="color: var(--gold);">Автопарк</a>
+      <a href="destinations.html">Путеводители</a>
     </div>
     <div class="lang-switcher">
       <a href="fleet.html" class="active">RU</a>
@@ -33,27 +32,27 @@ files['fleet.html'] = """<!DOCTYPE html>
   </nav>
 
   <div class="destinations-hero reveal-3d" style="opacity: 1; transform: none;">
-    <h1 class="gradient-text">ÐÐ°Ñˆ ÐŸÑ€ÐµÐ¼Ð¸Ð°Ð»ÑŒÐ½Ñ‹Ð¹ ÐÐ²Ñ‚Ð¾Ð¿Ð°Ñ€Ðº</h1>
-    <p>Ð‘ÐµÐ·ÑƒÐ¿Ñ€ÐµÑ‡Ð½Ñ‹Ðµ Ð°Ð²Ñ‚Ð¾Ð¼Ð¾Ð±Ð¸Ð»Ð¸, Ð¿Ñ€Ð¾ÑˆÐµÐ´ÑˆÐ¸Ðµ ÑÑ‚Ñ€Ð¾Ð³Ð¸Ð¹ ÐºÐ¾Ð½Ñ‚Ñ€Ð¾Ð»ÑŒ. Ð‘Ñ€Ð¾Ð½Ð¸Ñ€Ð¾Ð²Ð°Ð½Ð½Ñ‹Ðµ Ð²ÐµÑ€ÑÐ¸Ð¸ Ð¸ ÑÐ¾Ð¿Ñ€Ð¾Ð²Ð¾Ð¶Ð´ÐµÐ½Ð¸Ðµ Ð¾Ñ…Ñ€Ð°Ð½Ñ‹ Ð´Ð¾ÑÑ‚ÑƒÐ¿Ð½Ñ‹ Ð¿Ð¾ Ð·Ð°Ð¿Ñ€Ð¾ÑÑƒ.</p>
+    <h1 class="gradient-text">Наш Премиальный Автопарк</h1>
+    <p>Безупречные автомобили, прошедшие строгий контроль. Бронированные версии и сопровождение охраны доступны по запросу.</p>
   </div>
   <div class="destinations-grid">
     <div class="destination-card">
       <h3>Mercedes-Benz Maybach S-Class</h3>
-      <p>ÐÐ±ÑÐ¾Ð»ÑŽÑ‚Ð½Ñ‹Ð¹ ÑÑ‚Ð°Ð»Ð¾Ð½ Ñ€Ð¾ÑÐºÐ¾ÑˆÐ¸ Ð´Ð»Ñ Ð¿ÐµÑ€Ð²Ñ‹Ñ… Ð»Ð¸Ñ† Ð¸ Ñ‚Ð¾Ð¿-Ð¼ÐµÐ½ÐµÐ´Ð¶Ð¼ÐµÐ½Ñ‚Ð°.</p>
-      <ul><li>Ð¡Ð¸Ð´ÐµÐ½ÑŒÑ Executive Ñ Ð¼Ð°ÑÑÐ°Ð¶ÐµÐ¼</li><li>Ð˜Ð´ÐµÐ°Ð»ÑŒÐ½Ð°Ñ ÑˆÑƒÐ¼Ð¾Ð¸Ð·Ð¾Ð»ÑÑ†Ð¸Ñ</li><li>Ð¢Ð¾Ð»ÑŒÐºÐ¾ Ð¼Ð¾Ð´ÐµÐ»Ð¸ 2023-2025 Ð³Ð¾Ð´Ð°</li></ul>
-      <a href="mailto:info@vt-vip.ru?subject=Book Maybach" class="btn btn-outline" style="text-align: center;">Ð—Ð°Ð±Ñ€Ð¾Ð½Ð¸Ñ€Ð¾Ð²Ð°Ñ‚ÑŒ</a>
+      <p>Абсолютный эталон роскоши для первых лиц и топ-менеджмента.</p>
+      <ul><li>Сиденья Executive с массажем</li><li>Идеальная шумоизоляция</li><li>Только модели 2023-2025 года</li></ul>
+      <a href="mailto:info@vt-vip.ru?subject=Book Maybach" class="btn btn-outline" style="text-align: center;">Забронировать</a>
     </div>
     <div class="destination-card">
       <h3>Mercedes-Benz V-Class VIP</h3>
-      <p>ÐŸÑ€Ð¾ÑÑ‚Ð¾Ñ€ Ð¸ ÐºÐ¾Ð¼Ñ„Ð¾Ñ€Ñ‚. Ð˜Ð´ÐµÐ°Ð»ÑŒÐ½Ð¾ Ð´Ð»Ñ Ð´ÐµÐ»ÐµÐ³Ð°Ñ†Ð¸Ð¹ Ð¸ ÑÐµÐ¼ÐµÐ¹Ð½Ñ‹Ñ… Ð¿ÑƒÑ‚ÐµÑˆÐµÑÑ‚Ð²Ð¸Ð¹.</p>
-      <ul><li>ÐŸÐµÑ€ÐµÐ³Ð¾Ñ€Ð¾Ð´ÐºÐ° Ð¾Ñ‚ Ð²Ð¾Ð´Ð¸Ñ‚ÐµÐ»Ñ (Full Privacy)</li><li>Apple TV, PS5 Ð¸ Ð¿Ñ€ÐµÐ¼Ð¸Ð°Ð»ÑŒÐ½Ñ‹Ð¹ Ð·Ð²ÑƒÐº</li><li>ÐšÐ°Ð¿Ð¸Ñ‚Ð°Ð½ÑÐºÐ¸Ðµ ÐºÑ€ÐµÑÐ»Ð° Ñ Ð¾Ñ‚Ñ‚Ð¾Ð¼Ð°Ð½ÐºÐ¾Ð¹</li></ul>
-      <a href="mailto:info@vt-vip.ru?subject=Book V-Class" class="btn btn-outline" style="text-align: center;">Ð—Ð°Ð±Ñ€Ð¾Ð½Ð¸Ñ€Ð¾Ð²Ð°Ñ‚ÑŒ</a>
+      <p>Простор и комфорт. Идеально для делегаций и семейных путешествий.</p>
+      <ul><li>Перегородка от водителя (Full Privacy)</li><li>Apple TV, PS5 и премиальный звук</li><li>Капитанские кресла с оттоманкой</li></ul>
+      <a href="mailto:info@vt-vip.ru?subject=Book V-Class" class="btn btn-outline" style="text-align: center;">Забронировать</a>
     </div>
     <div class="destination-card">
       <h3>Mercedes-Benz G-Class (Escort)</h3>
-      <p>Ð¡Ñ‚Ð°Ñ‚ÑƒÑ Ð¸ Ð±ÐµÐ·Ð¾Ð¿Ð°ÑÐ½Ð¾ÑÑ‚ÑŒ. Ð¡Ð¾Ð¿Ñ€Ð¾Ð²Ð¾Ð¶Ð´ÐµÐ½Ð¸Ðµ Ð² Ð»ÑŽÐ±Ñ‹Ñ… ÑƒÑÐ»Ð¾Ð²Ð¸ÑÑ….</p>
-      <ul><li>Ð’Ð¾Ð¾Ñ€ÑƒÐ¶ÐµÐ½Ð½Ð°Ñ Ð¾Ñ…Ñ€Ð°Ð½Ð° (Ð¾Ð¿Ñ†Ð¸Ð¾Ð½Ð°Ð»ÑŒÐ½Ð¾)</li><li>Ð’Ñ‹ÑÑˆÐ¸Ð¹ ÑƒÑ€Ð¾Ð²ÐµÐ½ÑŒ Ð·Ð°Ñ‰Ð¸Ñ‚Ñ‹</li><li>Ð¡Ð¾Ð¿Ñ€Ð¾Ð²Ð¾Ð¶Ð´ÐµÐ½Ð¸Ðµ ÐºÐ¾Ñ€Ñ‚ÐµÐ¶ÐµÐ¹</li></ul>
-      <a href="mailto:info@vt-vip.ru?subject=Book G-Class" class="btn btn-outline" style="text-align: center;">Ð—Ð°Ð±Ñ€Ð¾Ð½Ð¸Ñ€Ð¾Ð²Ð°Ñ‚ÑŒ</a>
+      <p>Статус и безопасность. Сопровождение в любых условиях.</p>
+      <ul><li>Вооруженная охрана (опционально)</li><li>Высший уровень защиты</li><li>Сопровождение кортежей</li></ul>
+      <a href="mailto:info@vt-vip.ru?subject=Book G-Class" class="btn btn-outline" style="text-align: center;">Забронировать</a>
     </div>
   </div>
   <a href="https://wa.me/74950000000" class="floating-concierge" target="_blank"><svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.888-.788-1.487-1.761-1.663-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.052 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg><span>Personal Concierge</span></a>
@@ -122,7 +121,7 @@ files['fleet-ar.html'] = """<!DOCTYPE html>
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ø£Ø³Ø·ÙˆÙ„Ù†Ø§ - VT VIP</title>
+  <title>أسطولنا - VT VIP</title>
   <link rel="icon" type="image/jpeg" href="images/logo_clear.png">
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&family=Cairo:wght@300;400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
@@ -136,9 +135,9 @@ files['fleet-ar.html'] = """<!DOCTYPE html>
       <span class="logo-text">VT VIP</span>
     </a>
     <div class="nav-links">
-      <a href="ar.html">Ø§Ù„Ø±Ø¦ÙŠØ³ÙŠØ©</a>
-      <a href="fleet-ar.html" style="color: var(--gold);">Ø£Ø³Ø·ÙˆÙ„Ù†Ø§</a>
-      <a href="destinations-ar.html">Ø§Ù„Ø£Ø¯Ù„Ø© ÙˆØ§Ù„ÙƒÙˆÙ†Ø³ÙŠØ±Ø¬</a>
+      <a href="ar.html">الرئيسية</a>
+      <a href="fleet-ar.html" style="color: var(--gold);">أسطولنا</a>
+      <a href="destinations-ar.html">الأدلة والكونسيرج</a>
     </div>
     <div class="lang-switcher">
       <a href="fleet.html">RU</a>
@@ -148,35 +147,33 @@ files['fleet-ar.html'] = """<!DOCTYPE html>
   </nav>
 
   <div class="destinations-hero reveal-3d" style="opacity: 1; transform: none;">
-    <h1 class="gradient-text">Ø£Ø³Ø·ÙˆÙ„Ù†Ø§ Ø§Ù„ÙØ§Ø®Ø±</h1>
-    <p>Ø³ÙŠØ§Ø±Ø§Øª Ø®Ø§Ù„ÙŠØ© Ù…Ù† Ø§Ù„Ø¹ÙŠÙˆØ¨ Ø§Ø¬ØªØ§Ø²Øª Ù…Ø±Ø§Ù‚Ø¨Ø© Ø§Ù„Ø¬ÙˆØ¯Ø© Ø§Ù„ØµØ§Ø±Ù…Ø©. ØªØªÙˆÙØ± Ø¥ØµØ¯Ø§Ø±Ø§Øª Ù…ØµÙØ­Ø© ÙˆÙ…Ø±Ø§ÙÙ‚ÙˆÙ† Ù…Ø³Ù„Ø­ÙˆÙ† Ø¹Ù†Ø¯ Ø§Ù„Ø·Ù„Ø¨.</p>
+    <h1 class="gradient-text">أسطولنا الفاخر</h1>
+    <p>سيارات خالية من العيوب اجتازت مراقبة الجودة الصارمة. تتوفر إصدارات مصفحة ومرافقون مسلحون عند الطلب.</p>
   </div>
   <div class="destinations-grid">
     <div class="destination-card">
       <h3>Mercedes-Benz Maybach S-Class</h3>
-      <p>Ø§Ù„Ù…Ø¹ÙŠØ§Ø± Ø§Ù„Ù…Ø·Ù„Ù‚ Ù„Ù„Ø±ÙØ§Ù‡ÙŠØ© Ù„ÙƒØ¨Ø§Ø± Ø§Ù„Ø´Ø®ØµÙŠØ§Øª.</p>
-      <ul><li>Ù…Ù‚Ø§Ø¹Ø¯ ØªÙ†ÙÙŠØ°ÙŠØ© Ù…Ø¹ ØªØ¯Ù„ÙŠÙƒ</li><li>Ø¹Ø²Ù„ ØµÙˆØªÙŠ Ù…Ø«Ø§Ù„ÙŠ</li><li>Ù…ÙˆØ¯ÙŠÙ„Ø§Øª 2023-2025 ÙÙ‚Ø·</li></ul>
-      <a href="mailto:info@vt-vip.ru?subject=Book Maybach" class="btn btn-outline" style="text-align: center;">Ø§Ø­Ø¬Ø² Ø§Ù„Ø¢Ù†</a>
+      <p>المعيار المطلق للرفاهية لكبار الشخصيات.</p>
+      <ul><li>مقاعد تنفيذية مع تدليك</li><li>عزل صوتي مثالي</li><li>موديلات 2023-2025 فقط</li></ul>
+      <a href="mailto:info@vt-vip.ru?subject=Book Maybach" class="btn btn-outline" style="text-align: center;">احجز الآن</a>
     </div>
     <div class="destination-card">
       <h3>Mercedes-Benz V-Class VIP</h3>
-      <p>Ù…Ø³Ø§Ø­Ø© ÙˆØ±Ø§Ø­Ø©. Ù…Ø«Ø§Ù„ÙŠØ© Ù„Ù„ÙˆÙÙˆØ¯ ÙˆØ§Ù„Ø±Ø­Ù„Ø§Øª Ø§Ù„Ø¹Ø§Ø¦Ù„ÙŠØ©.</p>
-      <ul><li>ÙØ§ØµÙ„ Ù„Ù„Ø³Ø§Ø¦Ù‚ (Ø®ØµÙˆØµÙŠØ© ØªØ§Ù…Ø©)</li><li>Apple TV, PS5 ÙˆØµÙˆØª ÙØ§Ø®Ø±</li><li>Ù…Ù‚Ø§Ø¹Ø¯ ÙƒØ§Ø¨ØªÙ† Ù…Ø¹ Ù…Ø³Ù†Ø¯ Ù‚Ø¯Ù…</li></ul>
-      <a href="mailto:info@vt-vip.ru?subject=Book V-Class" class="btn btn-outline" style="text-align: center;">Ø§Ø­Ø¬Ø² Ø§Ù„Ø¢Ù†</a>
+      <p>مساحة وراحة. مثالية للوفود والرحلات العائلية.</p>
+      <ul><li>فاصل للسائق (خصوصية تامة)</li><li>Apple TV, PS5 وصوت فاخر</li><li>مقاعد كابتن مع مسند قدم</li></ul>
+      <a href="mailto:info@vt-vip.ru?subject=Book V-Class" class="btn btn-outline" style="text-align: center;">احجز الآن</a>
     </div>
     <div class="destination-card">
       <h3>Mercedes-Benz G-Class (Escort)</h3>
-      <p>Ø§Ù„Ù…ÙƒØ§Ù†Ø© ÙˆØ§Ù„Ø£Ù…Ù†. Ù…Ø±Ø§ÙÙ‚Ø© ÙÙŠ Ø¬Ù…ÙŠØ¹ Ø§Ù„Ø¸Ø±ÙˆÙ.</p>
-      <ul><li>Ø­Ø±Ø§Ø³Ø© Ù…Ø³Ù„Ø­Ø© (Ø§Ø®ØªÙŠØ§Ø±ÙŠ)</li><li>Ø£Ø¹Ù„Ù‰ Ù…Ø³ØªÙˆÙ‰ Ø£Ù…Ø§Ù†</li><li>Ù…Ø±Ø§ÙÙ‚Ø© Ø§Ù„Ù…ÙˆØ§ÙƒØ¨</li></ul>
-      <a href="mailto:info@vt-vip.ru?subject=Book G-Class" class="btn btn-outline" style="text-align: center;">Ø§Ø­Ø¬Ø² Ø§Ù„Ø¢Ù†</a>
+      <p>المكانة والأمن. مرافقة في جميع الظروف.</p>
+      <ul><li>حراسة مسلحة (اختياري)</li><li>أعلى مستوى أمان</li><li>مرافقة المواكب</li></ul>
+      <a href="mailto:info@vt-vip.ru?subject=Book G-Class" class="btn btn-outline" style="text-align: center;">احجز الآن</a>
     </div>
   </div>
   <a href="https://wa.me/74950000000" class="floating-concierge" target="_blank"><svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.888-.788-1.487-1.761-1.663-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.052 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg><span>Personal Concierge</span></a>
 </body>
 </html>"""
 
-# Write files securely
 for k, v in files.items():
     with open(k, "w", encoding="utf-8") as f:
         f.write(v)
-
