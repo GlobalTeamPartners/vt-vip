@@ -69,9 +69,7 @@ h1, h2, h3, .logo-text {
   text-decoration: none; color: #fff;
 }
 
-.logo-img, .hero-logo, .loader-logo {
-  mix-blend-mode: screen; /* Fix for black bg AI logos */
-}
+.logo-img, .hero-logo, .loader-logo { /* Transparent PNG logo used */ }
 
 .logo-img { width: 40px; height: 40px; object-fit: contain; }
 .logo-text { font-size: 24px; font-weight: 600; text-shadow: var(--ts-dark); }
@@ -308,4 +306,5 @@ body.standard-page #gl-canvas {
   box-shadow: 0 15px 40px rgba(37, 211, 102, 0.6);
 }
 .floating-concierge svg { fill: #fff; }
+
 
