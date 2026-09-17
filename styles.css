@@ -193,3 +193,69 @@ p { font-size: clamp(16px, 2vw, 20px); margin-bottom: 30px; text-shadow: var(--t
   .actions { flex-direction: column; }
   .btn { width: 100%; }
 }
+
+/* Standard Pages (Destinations) */
+body.standard-page {
+  overflow-y: auto;
+  background: radial-gradient(circle at 50% 0%, #1a1625 0%, var(--bg) 60%);
+}
+body.standard-page #gl-canvas {
+  display: none;
+}
+.nav-links {
+  display: flex; gap: 30px; align-items: center;
+}
+.nav-links a {
+  color: #fff; text-decoration: none; font-size: 16px; transition: color 0.3s;
+}
+.nav-links a:hover { color: var(--gold); }
+
+.destinations-hero {
+  padding: 150px 10% 60px;
+  text-align: center;
+}
+.destinations-hero p {
+  max-width: 600px; margin: 0 auto;
+}
+.destinations-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 30px;
+  padding: 0 10% 100px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+.destination-card {
+  background: var(--card-bg);
+  border: 1px solid rgba(212, 168, 67, 0.3);
+  border-radius: 12px;
+  padding: 40px;
+  transition: transform 0.3s, background 0.3s, box-shadow 0.3s;
+  backdrop-filter: blur(5px);
+  display: flex;
+  flex-direction: column;
+}
+.destination-card:hover {
+  transform: translateY(-5px);
+  background: rgba(20, 15, 25, 0.8);
+  box-shadow: 0 10px 30px rgba(212, 168, 67, 0.15);
+}
+.destination-card h3 {
+  font-size: 32px;
+  margin-bottom: 15px;
+  color: var(--gold);
+}
+.destination-card ul {
+  list-style: none; margin-bottom: 25px; flex-grow: 1;
+}
+.destination-card ul li {
+  margin-bottom: 10px; font-size: 15px; opacity: 0.8;
+  padding-left: 20px; position: relative;
+}
+.destination-card ul li::before {
+  content: '?'; position: absolute; left: 0; color: var(--gold); font-size: 12px; top: 3px;
+}
+.price-tag {
+  font-size: 24px; font-family: 'Cormorant Garamond', serif;
+  color: #fff; margin-bottom: 20px; font-weight: 600;
+}
